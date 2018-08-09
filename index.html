@@ -14,6 +14,10 @@
 
         <!--CSS-->
         <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <!--FontAwesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <!--googlefonts-->
+        <link href="https://fonts.googleapis.com/css?family=Marcellus+SC|Tangerine" rel="stylesheet">
 
         <!-- Firebase Reference -->
         <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
@@ -29,18 +33,17 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-body bg-black text-white text-center p-4">
-                        <h1> Train Time</h1>
-                        <h2>Please view current trains below:</h2>
+                    <div class="card-body bg-black text-white text-center p-4" id="header">
+                        <h1 style="font-size: 70px"> Train Schedule </h1>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Search Parameters Row -->
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <div class="card mt-5">
-                    <div class="card-header"><h2>Add Train</h2></div>
+                    <div class="card-header"><h2 class="mt-4">Add Train</h2></div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <form>
@@ -61,7 +64,7 @@
                                     <input type="text" class="form-control" id="frequency-input" placeholder="enter frequency here">
                                 </div>
                                 <div>
-                                    <button type="button" class="btn btn-info" id="sButton"> Submit</button>
+                                    <button type="button" class="btn btn-info" id="sButton"> Submit <i class="fa fa-train" aria-hidden="true"></i></button>
                                 </div>
                             </form>
                         </li>
